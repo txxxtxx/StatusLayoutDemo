@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="this is error layout"/>
+
+    <TextView
+        android:id="@+id/status_action_retry"
+        android:layout_width="@dimen/dimen_button_single_width"
+        android:layout_height="@dimen/dimen_button_single_height"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_button_bg_border"
+        android:gravity="center"
+        android:text="重新加载"
+        android:textColor="@color/text_tittle"
+        android:textSize="@dimen/size_text_normal"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/status_action_retry"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@id/status_drawable_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxHeight="75dp"
+            android:maxWidth="75dp"
+            android:src="@drawable/error"/>
+
+        <TextView
+            android:id="@id/status_string_tittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/text_tittle"
+            android:textSize="@dimen/size_text_detail"
+            tools:text="没有网络"/>
+
+        <TextView
+            android:id="@id/status_string_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/text_detail"
+            android:textSize="@dimen/size_text_detail"
+            tools:text="检查网络后，重新加载"/>
+
+    </LinearLayout>
+</RelativeLayout>

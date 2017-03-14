@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="status_action_retry" type="id" />
+    <item name="status_drawable_icon" type="id" />
+    <item name="status_string_tittle" type="id" />
+    <item name="status_string_info" type="id" />
+</resources>
